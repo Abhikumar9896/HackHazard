@@ -73,7 +73,24 @@ const Navbar = ({ logout }) => {
           Control Room
         </p>
       </Link>
-      <div></div>
+      <div>
+      <Link to="/ViewThreat">
+          <button
+            className=" p-1 mr-3 rounded"
+            style={{ color: "#a0dbe6", border: "1px solid #a0dbe6" }}
+          >
+            View Threats
+          </button>
+        </Link>
+        <Link to="/AddThreat">
+          <button
+            className=" p-1 mr-3 rounded"
+            style={{ color: "#a0dbe6", border: "1px solid #a0dbe6" }}
+          >
+            Add Threats
+          </button>
+        </Link>
+      </div>
     </nav>
   );
 };

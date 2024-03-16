@@ -42,6 +42,8 @@ function App() {
         <Route path="/user" element={<UserList/>}></Route>
 
         <Route path="/" element={<SignIn />}></Route>
+        <Route path="/ViewThreat" element={<UserList/>}></Route>
+        <Route path="/AddThreat" element = {<UploadForm/>}></Route>
       </Routes>
     </div>
   );

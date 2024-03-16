@@ -58,7 +58,7 @@ def save_image(image, filename):
 
 def isAuthorized():
     uid = request.args.get('user_id')
-    if uid == "PAxWAjzBTKPeI3qjyKzlCGI80pq1":
+    if uid == "YaT0HQS8vIWmVlKEmhRqUoydiVo1":
         return True
     return jsonify({"message": "not authorized!"})
 
@@ -177,7 +177,7 @@ def recognize_face(face_image, location, time, image_data):
                     'location': location,
                     'image': image_data,
                     'time': time,
-                }), room='PAxWAjzBTKPeI3qjyKzlCGI80pq1')  # Emit to the specific client
+                }), room='YaT0HQS8vIWmVlKEmhRqUoydiVo1')  # Emit to the specific client
 
                 # do something if face matches
                 print(f"target {name} is detected at location {location}")
